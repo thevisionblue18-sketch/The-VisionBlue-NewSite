@@ -1,0 +1,447 @@
+/* GENERAL */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  padding-top: 80px;
+  font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+}
+
+section {
+  padding: 80px 0;
+}
+
+/* HERO */
+.hero {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero img {
+  max-width: 180px;
+  margin-bottom: 20px;
+}
+
+/* HEADINGS */
+h2 {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* CARDS */
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* GALLERY */
+#gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* LISTS */
+ul.list-unstyled li {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer {
+  font-size: 0.9rem;
+}/* HISTORY SECTION */
+.history-section {
+  background: linear-gradient(135deg, #eef4ff, #dce7ff);
+  padding: 80px 0;
+  border-radius: 0;
+}
+
+/* TIMELINE */
+.timeline {
+  position: relative;
+  margin: 40px auto;
+  padding-left: 20px;
+  border-left: 3px solid #0056b3;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 40px;
+}
+
+.timeline-icon {
+  position: absolute;
+  left: -28px;
+  top: 0;
+  background: #0056b3;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.timeline-content h5 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+/* READ MORE */
+.more-history {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.more-history.show {
+  display: block;
+  opacity: 1;
+}
+/* HAMBURGER BUTTON */
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 28px;
+    cursor: pointer;
+    z-index: 2000;
+    color: #333;
+}
+/* SIDE MENU (HIDDEN BY DEFAULT) */
+.side-menu {
+    position: fixed;
+    top: 0;
+    left: -220px; /* Hidden */
+    width: 200px;
+    height: 100%;
+    background: #ffffff;
+    border-right: 1px solid #ddd;
+    padding: 80px 10px 20px;
+    transition: 0.3s ease;
+    z-index: 1500;
+}
+/* WHEN MENU IS OPEN */
+.side-menu.open {
+    left: 0;
+}
+/* MENU LINKS */
+.side-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.side-menu ul li {
+    margin: 15px 0;
+}
+
+.side-menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    font-weight: 600;
+    display: block;
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.side-menu ul li a:hover {
+    background: #007bff;
+    color: white;
+}
+/* SHIFT CONTENT WHEN MENU IS OPEN (OPTIONAL) */
+.side-menu.open ~ * {
+    margin-left: 200px;
+    transition: 0.3s ease;
+}
+/* MOBILE: MENU COVERS SCREEN */
+@media (max-width: 768px) {
+    .side-menu {
+        width: 70%;
+    }
+}
+.side-menu ul li a i {
+    margin-right: 10px;
+}
+/* ELEGANT TOP NAVBAR */
+.navbar {
+    padding-top: 18px !important;
+    padding-bottom: 18px !important;
+    font-size: 1.15rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15); /* subtle shadow */
+}
+/* DONATE BUTTON HOVER EFFECT */
+.navbar .btn:hover {
+    background-color: #0056b3 !important;
+    color: white !important;
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+}
+/* LANGUAGE DROPDOWN BUTTON */
+.navbar .dropdown-toggle {
+    background-color: #ffffff;
+    color: #007bff;
+    border-radius: 6px;
+    padding: 6px 14px;
+}
+
+.navbar .dropdown-toggle:hover {
+    background-color: #e6e6e6;
+    color: #0056b3;
+}
+
+.dropdown-menu a:hover {
+    background-color: #007bff;
+    color: white;
+}
+/* LANGUAGE DROPDOWN FLAG SPACING */
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+}
+/* CENTERED NAVBAR BRAND */
+.navbar-brand img {
+    height: 32px;
+}
+/* SHADOW APPEARS ONLY WHEN SCROLLING */
+.elegant-navbar {
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.elegant-navbar.scrolled {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    background-color: #0056b3 !important;
+}
+/* FADE-IN ANIMATION */
+.elegant-navbar {
+    opacity: 0;
+    animation: fadeInNavbar 0.8s ease forwards;
+}
+
+@keyframes fadeInNavbar {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+/* DONATE BUTTON HOVER */
+.donate-btn:hover {
+    background-color: #0056b3 !important;
+    color: white !important;
+    transform: scale(1.05);
+    transition: 0.2s ease-in-out;
+}
+/* NAVBAR LOGO */
+.nav-logo {
+    height: 36px;
+    margin-right: 10px;
+}
+
+/* LEFT SPACER TO KEEP CENTER ALIGNMENT */
+.nav-spacer {
+    width: 80px;
+}
+
+/* ENSURE CENTER BRAND NEVER MOVES */
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+}
+
+/* RIGHT SIDE BUTTONS STAY RIGHT */
+.navbar .d-flex {
+    margin-left: auto;
+}
+
+/* PREVENT WRAPPING */
+.navbar * {
+    white-space: nowrap;
+}
+/* FADE-IN ANIMATION */
+.elegant-navbar {
+    opacity: 0;
+    animation: fadeInNavbar 0.8s ease forwards;
+}
+
+@keyframes fadeInNavbar {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* SHADOW ON SCROLL */
+.elegant-navbar {
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.elegant-navbar.scrolled {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+/* FULL PAGE WATERMARK */
+body::before {
+    content: "";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 480px; /* adjust size if needed */
+    height: 480px;
+    background-image: url("assets/img/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.05; /* subtle watermark */
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    pointer-events: none;
+}
+/* FULL-PAGE WATERMARK BEHIND EVERYTHING */
+body::before {
+    content: "";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 650px;        /* adjust size if needed */
+    height: 650px;
+    background-image: url("assets/img/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.05;       /* subtle watermark */
+    transform: translate(-50%, -50%);
+    z-index: -9999;      /* forces it behind EVERYTHING */
+    pointer-events: none;
+}
+
+/* ENSURE ALL SECTIONS ARE TRANSPARENT SO WATERMARK SHOWS THROUGH */
+section,
+.container,
+.row,
+.col,
+.card,
+.contact-section,
+.donation-section,
+.activities-section,
+footer,
+header {
+    background-color: transparent !important;
+    position: relative;
+    z-index: 1;
+}
+
+/* FIX BOOTSTRAP CARDS THAT BLOCK THE WATERMARK */
+.card {
+    background-color: rgba(255, 255, 255, 0.85) !important; /* readable but transparent */
+    backdrop-filter: blur(1px); /* optional: makes it elegant */
+}
+
+/* FIX ANY ELEMENTS WITH FORCED WHITE BACKGROUNDS */
+*[style*="background-color: white"],
+*[style*="background:#fff"],
+*[style*="background: white"] {
+    background-color: transparent !important;
+}
+/* MOBILE NAVBAR FIXES */
+@media (max-width: 768px) {
+
+    /* Reduce logo size */
+    .nav-logo {
+        height: 28px;
+        margin-right: 6px;
+    }
+
+    /* Reduce brand text size */
+    .brand-text {
+        font-size: 1.1rem;
+    }
+
+    /* Reposition brand for mobile */
+    .navbar-brand {
+        position: static;
+        transform: none;
+        margin: 0 auto;
+    }
+
+    /* Center brand on mobile */
+    .navbar .container {
+        justify-content: center !important;
+    }
+
+    /* Move language + donate to a mobile-friendly row */
+    .navbar .d-flex {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        gap: 6px;
+    }
+
+    /* Make dropdown button smaller */
+    .dropdown-toggle {
+        padding: 4px 10px;
+        font-size: 0.85rem;
+    }
+
+    /* Make donate button smaller */
+    .donate-btn {
+        padding: 4px 10px;
+        font-size: 0.85rem;
+    }
+
+    /* Reduce navbar height */
+    .navbar {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+}/* RESPONSIVE WATERMARK */
+@media (max-width: 768px) {
+    body::before {
+        width: 350px;
+        height: 350px;
+        opacity: 0.04;
+    }
+}
+
+@media (max-width: 480px) {
+    body::before {
+        width: 260px;
+        height: 260px;
+        opacity: 0.035;
+    }
+}
+/* RESPONSIVE SECTION SPACING */
+@media (max-width: 768px) {
+    section {
+        padding: 40px 20px !important;
+    }
+
+    h2, h3 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+

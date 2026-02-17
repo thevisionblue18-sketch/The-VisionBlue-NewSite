@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The VisionBlue ONG</title>
+  <meta name="description" content="The VisionBlue ONG sostiene giovani, donne e comunità vulnerabili attraverso l’educazione, la formazione professionale e lo sviluppo umano.">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- HAMBURGER BUTTON -->
+    <div class="menu-toggle" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <!-- LEFT SIDE MENU -->
+    <nav class="side-menu" id="sideMenu">
+        <ul>
+            <li><a href="#home"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="#about"><i class="fa-solid fa-user"></i> Chi siamo</a></li>
+            <li><a href="#history"><i class="fa-solid fa-book-open"></i> Storia</a></li>
+            <li><a href="#objectives"><i class="fa-solid fa-bullseye"></i> Obiettivi</a></li>
+            <li><a href="#executives"><i class="fa-solid fa-users"></i> Direttivo</a></li>
+            <li><a href="#programs"><i class="fa-solid fa-graduation-cap"></i> Programmi</a></li>
+            <li><a href="#activities"><i class="fa-solid fa-briefcase"></i> Attività</a></li>
+            <li><a href="#gallery"><i class="fa-solid fa-image"></i> Galleria</a></li>
+            <li><a href="#donation"><i class="fa-solid fa-hand-holding-heart"></i> Dona</a></li>
+            <li><a href="#contact"><i class="fa-solid fa-envelope"></i> Contatti</a></li>
+        </ul>
+    </nav>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-dark bg-primary fixed-top elegant-navbar">
+        <div class="container d-flex justify-content-between align-items-center">
+
+            <div class="nav-spacer"></div>
+
+            <!-- CENTER LOGO -->
+            <a class="navbar-brand fw-bold d-flex align-items-center justify-content-center mx-auto" href="#home" style="font-size:1.4rem;">
+                <img src="assets/img/logo.png" alt="Logo" class="nav-logo">
+                <span>The VisionBlue ONG</span>
+            </a>
+
+            <!-- RIGHT SIDE -->
+            <div class="d-flex align-items-center gap-2">
+
+                <!-- LANGUAGE SWITCHER -->
+                <div class="dropdown">
+                    <button class="btn btn-light dropdown-toggle fw-bold" type="button" data-bs-toggle="dropdown">
+                        🌐 Lingua
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                        <li><a class="dropdown-item" href="index-en.html">🇬🇧 English</a></li>
+                        <li><a class="dropdown-item" href="index-fr.html">🇫🇷 Français</a></li>
+                        <li><a class="dropdown-item" href="index-it.html">🇮🇹 Italiano</a></li>
+                        <li><a class="dropdown-item" href="index-de.html">🇩🇪 Deutsch</a></li>
+                        <li><a class="dropdown-item" href="index-es.html">🇪🇸 Español</a></li>
+                        <li><a class="dropdown-item" href="index-no.html">🇳🇴 Norsk</a></li>
+                    </ul>
+                </div>
+
+                <!-- DONATE BUTTON -->
+                <a href="#donation" class="btn btn-light fw-bold donate-btn">Dona</a>
+
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section id="home" class="hero d-flex align-items-center text-white">
+        <div class="container text-center">
+            <img src="assets/img/logo.png" class="img-fluid mb-4" style="max-width: 180px;">
+            <h1 class="fw-bold">Potenziare le comunità, costruire il futuro</h1>
+            <p class="lead mt-3">Sosteniamo giovani, donne e persone vulnerabili attraverso l’educazione e la formazione professionale.</p>
+
+            <a href="#about" class="btn btn-light mt-3">Scopri di più</a>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="container text-center">
+            <h2>Chi è The VisionBlue ONG</h2>
+            <p class="mt-3">
+                The VisionBlue ONG promuove lo sviluppo umano attraverso l’educazione, la formazione professionale e il sostegno comunitario.
+            </p>
+        </div>
+    </section>
+
+    <!-- HISTORY -->
+    <section id="history" class="history-section">
+        <div class="container">
+
+            <h2 class="text-center mb-4">Breve storia</h2>
+
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-icon"><span>🌍</span></div>
+                    <div class="timeline-content">
+                        <h5>Origini e visione</h5>
+                        <p>
+                            The VisionBlue è un’organizzazione senza scopo di lucro fondata da studenti e intellettuali impegnati nel sostegno a lungo termine delle giovani donne camerunesi.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon"><span>🎓</span></div>
+                    <div class="timeline-content">
+                        <h5>Radici accademiche e professionali</h5>
+                        <p>
+                            L’organizzazione nasce da anni di studi ed esperienze professionali nel lavoro sociale, nella teologia, nelle scienze mediche e in iniziative umanitarie in Camerun, Germania, Italia e Kenya.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon"><span>⚠️</span></div>
+                    <div class="timeline-content">
+                        <h5>Rispondere alla crisi</h5>
+                        <p>
+                            I membri hanno osservato da vicino le difficoltà affrontate dai giovani, in particolare dalle ragazze tra i 15 e i 25 anni, sfollate e private di istruzione, cure sanitarie e mezzi di sussistenza a causa delle tensioni politiche.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- READ MORE -->
+            <div class="text-center mt-4">
+                <button class="btn btn-outline-primary" id="readMoreBtn">Mostra di più</button>
+            </div>
+
+            <div id="moreHistory" class="more-history mt-4">
+                <p>
+                    Mossi da compassione, senso civico e impegno per la dignità umana, i membri fondatori hanno unito le forze per creare un’iniziativa che mettesse conoscenze, esperienza e valori umanitari al servizio delle giovani donne del Camerun.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- OBJECTIVES -->
+    <section id="objectives">
+        <div class="container text-center">
+            <h2>Obiettivi</h2>
+            <ul class="list-unstyled mt-3">
+                <li>✔ Empowerment di qualità</li>
+                <li>✔ Follow-up sistematico e strutturato</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- EXECUTIVES -->
+    <section id="executives" class="bg-light">
+        <div class="container text-center">
+            <h2>Direttivo</h2>
+            <ul class="list-unstyled mt-3">
+                <li>Presidente del Consiglio</li>
+                <li>Direttore Generale (CEO)</li>
+                <li>Vicepresidente</li>
+                <li>Portavoce</li>
+                <li>Responsabile della comunicazione</li>
+                <li>Tesoriere</li>
+                <li>Segretario finanziario</li>
+                <li>Segretario generale</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- PROGRAMS -->
+    <section id="programs">
+        <div class="container text-center">
+            <h2>I nostri programmi</h2>
+
+            <div class="row mt-4 g-4">
+
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h5>Formazione professionale</h5>
+                        <p>Sartoria, artigianato e competenze pratiche per l’autonomia economica.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h5>Istruzione e mentoring</h5>
+                        <p>Workshop, mentoring e supporto educativo comunitario.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h5>Sviluppo comunitario</h5>
+                        <p>Progetti che rafforzano i legami sociali e promuovono comunità sostenibili.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ACTIVITIES -->
+    <section id="activities" class="bg-light">
+        <div class="container text-center">
+            <h2>Attività annuali</h2>
+            <ul class="list-unstyled mt-3">
+                <li>✔ Sensibilizzazione su igiene e salute</li>
+                <li>✔ Momenti ricreativi occasionali</li>
+                <li>✔ Festa dei bambini</li>
+                <li>✔ Visite scolastiche</li>
+                <li>✔ Servizi comunitari</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery">
+        <div class="container text-center">
+            <h2>Galleria</h2>
+
+            <div class="row mt-4 g-4">
+                <div class="col-md-3"><img src="assets/img/gallery1.jpg" class="img-fluid rounded"></div>
+                <div class="col-md-3"><img src="assets/img/gallery2.jpg" class="img-fluid rounded"></div>
+                <div class="col-md-3"><img src="assets/img/gallery3.jpg" class="img-fluid rounded"></div>
+                <div class="col-md-3"><img src="assets/img/gallery4.jpg" class="img-fluid rounded"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- DONATION -->
+    <section id="donation" class="section" style="text-align:center; padding:60px 20px; background:#f7f9fc;">
+        <div class="container" style="max-width:800px; margin:0 auto;">
+
+            <h2 style="font-size:2.2rem; margin-bottom:10px;">
+                <i class="fa-solid fa-hand-holding-heart" style="color:#007bff;"></i>
+                Sostieni la nostra missione
+            </h2>
+
+            <p style="font-size:1.1rem; margin-bottom:40px; color:#444;">
+                Il tuo contributo ci aiuta a sostenere giovani, donne e comunità vulnerabili attraverso l’educazione, la formazione professionale e lo sviluppo umano.
+            </p>
+
+            <!-- PayPal -->
+            <div style="margin-bottom:40px;">
+                <h3 style="font-size:1.5rem;">
+                    <i class="fa-brands fa-paypal" style="color:#003087;"></i>
+                    Dona con PayPal
+                </h3>
+                <p>Puoi effettuare una donazione sicura tramite PayPal:</p>
+                <a href="#" class="btn" style="padding:12px 25px; background:#007bff; color:white; border-radius:5px; text-decoration:none;">
+                    Dona con PayPal
+                </a>
+            </div>
+
+            <!-- Bank Transfer -->
+            <div style="margin-bottom:40px;">
+                <h3 style="font-size:1.5rem;">
+                    <i class="fa-solid fa-building-columns" style="color:#28a745;"></i>
+                    Bonifico bancario (IBAN)
+                </h3>
+                <p>Puoi sostenerci anche tramite bonifico bancario:</p>
+                <ul style="list-style:none; padding:0; font-size:1.05rem; color:#333;">
+                    <li><strong>Intestatario del conto:</strong> [Inserire nome]</li>
+                    <li><strong>IBAN:</strong> [Inserire IBAN]</li>
+                    <li><strong>BIC/SWIFT:</strong> [Inserire BIC]</li>
+                    <li><strong>Banca:</strong> [Inserire nome banca]</li>
+                </ul>
+            </div>
+
+            <!-- Mobile Money -->
+            <div style="margin-bottom:40px;">
+                <h3 style="font-size:1.5rem;">
+                    <i class="fa-solid fa-mobile-screen-button" style="color:#ff8800;"></i>
+                    Mobile Money
+                </h3>
+                <p>Per i donatori in Camerun:</p>
+                <ul style="list-style:none; padding:0; font-size:1.05rem; color:#333;">
+                    <li>
+                        <i class="fa-solid fa-wallet" style="color:#f7b500; margin-right:8px;"></i>
+                        <strong>MTN Mobile Money:</strong> [Inserire numero]
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-arrow-right-arrow-left" style="color:#ff6600; margin-right:8px;"></i>
+                        <strong>Orange Money:</strong> [Inserire numero]
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Other Methods -->
+            <div>
+                <h3 style="font-size:1.5rem;">
+                    <i class="fa-solid fa-coins" style="color:#6c757d;"></i>
+                    Altri metodi
+                </h3>
+                <p>Ulteriori modalità di donazione saranno disponibili a breve.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section" style="padding:60px 20px; background:#f7f9fc;">
+        <div class="container" style="max-width:900px; margin:0 auto;">
+
+            <h2 style="text-align:center; font-size:2.2rem; margin-bottom:20px;">
+                <i class="fa-solid fa-envelope" style="color:#007bff; margin-right:10px;"></i>
+                Contattaci
+            </h2>
+
+            <p style="text-align:center; font-size:1.1rem; color:#444; margin-bottom:40px;">
+                Siamo disponibili per rispondere a tutte le tue domande. Contattaci attraverso uno dei canali indicati.
+            </p>
+
+            <div style="display:flex; flex-wrap:wrap; justify-content:center; gap:40px;">
+
+                <div style="flex:1 1 250px; text-align:center;">
+                    <i class="fa-solid fa-at" style="font-size:2rem; color:#007bff; margin-bottom:10px;"></i>
+                    <h3>Email</h3>
+                    <p style="font-size:1rem; color:#333;">info@thevisionblue.org</p>
+                </div>
+
+                <div style="flex:1 1 250px; text-align:center;">
+                    <i class="fa-solid fa-location-dot" style="font-size:2rem; color:#ff6600; margin-bottom:10px;"></i>
+                    <h3>Località</h3>
+                    <p style="font-size:1rem; color:#333;">Camerun, Germania, Italia</p>
+                </div>
+
+                <div style="flex:1 1 250px; text-align:center;">
+                    <i class="fa-solid fa-phone" style="font-size:2rem; color:#28a745; margin-bottom:10px;"></i>
+                    <h3>Telefono (Camerun)</h3>
+                    <p style="font-size:1rem; color:#333;">+237 676 376 238</p>
+                </div>
+
+                <div style="flex:1 1 250px; text-align:center;">
+                    <i class="fa-solid fa-phone" style="font-size:2rem; color:#28a745; margin-bottom:10px;"></i>
+                    <h3>Telefono (Germania)</h3>
+                    <p style="font-size:1rem; color:#333;">+49 1521 4617930</p>
+                </div>
+
+                <div style="flex:1 1 250px; text-align:center;">
+                    <i class="fa-solid fa-phone" style="font-size:2rem; color:#28a745; margin-bottom:10px;"></i>
+                    <h3>Telefono (Italia)</h3>
+                    <p style="font-size:1rem; color:#333;">+39 392 845 6152</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+  <!-- FOOTER -->
+  <footer class="text-center text-white py-3 bg-primary">
+    <small>&copy; <span id="year"></span> The VisionBlue NGO</small>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+    const readMoreBtn = document.getElementById("readMoreBtn");
+    const moreHistory = document.getElementById("moreHistory");
+
+    readMoreBtn.addEventListener("click", () => {
+      moreHistory.classList.toggle("show");
+      readMoreBtn.textContent =
+        moreHistory.classList.contains("show") ? "Mostra meno" : "Leggi di più";
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+function toggleMenu() {
+    const menu = document.getElementById("sideMenu");
+    menu.classList.toggle("open");
+}
+</script>
+<script>
+window.addEventListener("scroll", function() {
+    const navbar = document.querySelector(".elegant-navbar");
+    if (window.scrollY > 10) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+});
+</script>
+<script>
+window.addEventListener("scroll", function() {
+    const navbar = document.querySelector(".elegant-navbar");
+    if (window.scrollY > 10) {
+        navbar.classList.add("scrolled");
+    } else {
+        navbar.classList.remove("scrolled");
+    }
+});
+</script>
+</body>
+</html>
